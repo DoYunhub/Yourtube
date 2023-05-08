@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>너튜브</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="youtube_form">
+      <h1>yourtube</h1>
+      <div class="youtube"></div>
+    </div>
+    <div class="background">
+      <div class="container">
+        <iframe
+          width="500"
+          height="700"
+          src="https://www.youtube.com/embed/ziMvGgq8FQc?autoplay=1&autopause=1"
+          allow="autoplay"
+        ></iframe>
+      </div>
+
+      <div class="button-box">
+        <div class="button-container">
+          <button class="like"></button>
+          <div class="button-div1">0</div>
+        </div>
+        <div class="button-container">
+          <button class="bad"></button>
+          <div class="button-div">싫어요</div>
+        </div>
+        <div class="button-container">
+          <button id="modal_btn1" class="comment"></button>
+          <div class="button-div">댓글</div>
+        </div>
+        <div class="button-container">
+          <button id="modal_btn" class="share"></button>
+          <div class="button-div">공유</div>
+        </div>
+      </div>
+    </div>
+    <!-- 댓글모달팝업 -->
+    <div class="modal_bg1"></div>
+    <div class="modal_wrap1">
+      <div class="modal_close1"><a href="#">close</a></div>
+      <div class="text_modal">댓글달기</div>
+      <div class="text_form">
+        <input class="text_commit" type="text" placeholder="댓글쓰기..." />
+        <i></i>
+        <button class="submit">제출</button>
+      </div>
+      <div class="write_comment"></div>
+    </div>
+
+    <!-- 쉐어모달팝업 -->
+    <div class="modal_bg"></div>
+    <div class="modal_wrap">
+      <div class="modal_close"><a href="#">close</a></div>
+      <div class="share_title">공유</div>
+      <div class="share_container">
+        <div class="share-img">
+          <a href="https://ko-kr.facebook.com/"
+            ><img class="facebook" src="./image/facebook.png" alt="facebook"
+          /></a>
+        </div>
+
+        <div class="share-img">
+          <a href="https://www.instagram.com/">
+            <img
+              class="instagram"
+              src="./image/instagram.jpeg"
+              alt="instagram"
+            />
+          </a>
+        </div>
+
+        <div class="share-img">
+          <a
+            href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko"
+          >
+            <img class="kakao" src="/image/kakao.png" alt="kakao" />
+          </a>
+        </div>
+
+        <div class="share-img">
+          <a href="https://twitter.com/?lang=ko">
+            <img class="twitter" src="/image/twitter.png" alt="twitter" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
